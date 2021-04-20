@@ -4,3 +4,7 @@
   - name: output 1
     debug:
       msg: "Hello world!"
+
+- name: output 1
+    debug:
+      msg: "Value of var1 is: {{var1}}"
