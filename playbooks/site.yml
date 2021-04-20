@@ -5,6 +5,9 @@
     debug:
       msg: "Hello world!!!"
 
+  - name: Load variables from test.yml
+    include_vars: ../../test.yml
+  
   - name: output 1
     debug:
       msg: "Value of var1 is: {{var1}}"
