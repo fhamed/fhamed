@@ -6,7 +6,7 @@
       msg: "Hello world!!!"
 
   - name: Load variables from test.yml
-    include_vars: ../../test.yml
+    include_vars: ../test.yml
   
   - name: output 1
     debug:
