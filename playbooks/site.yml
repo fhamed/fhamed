@@ -14,7 +14,7 @@
 
   - name: output 2
     debug:
-      var: WAWIADM_PW
+      var: wawiadm_pw
 
   - name: output 3
     debug:
