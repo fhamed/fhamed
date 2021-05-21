@@ -27,10 +27,8 @@
         - "'{{ lookup('env', 'ANSIBLE_NET_PASSWORD') }}'"
 
   - name: output 5
-    shell: env
-    register: myenv
-        
-  - name: output 6
     debug:      
-      var: myenv     
+      msg: 
+        - "'{{ lookup('env', 'ENV_WAWIADM') }}'"
+        - "'{{ lookup('env', 'ENV_STDADM') }}'"
     
