@@ -31,4 +31,5 @@
       msg: 
         - "'{{ lookup('env', 'ENV_WAWIADM') }}'"
         - "'{{ lookup('env', 'ENV_STDADM') }}'"
-    
+        - "'{{ lookup('env', 'ENV_STRADM') }}'"    
+        - "'{{ lookup('env', 'ENV_SYS_PW') }}'"
