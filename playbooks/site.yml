@@ -27,8 +27,11 @@
         - "'{{ lookup('env', 'ANSIBLE_NET_PASSWORD') }}'"
 
   - name: output 5
-    debug:      
+    shell: env
+    register: myenv
       msg: 
-        -  "{{ ansible_user }}"
-        #-  "{{ ansible_password }}"      
+        
+  - name: output 6
+    debug:      
+      var: myenv     
     
