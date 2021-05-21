@@ -26,9 +26,9 @@
         - "'{{ lookup('env', 'ANSIBLE_NET_USERNAME') }}'"
         - "'{{ lookup('env', 'ANSIBLE_NET_PASSWORD') }}'"
 
-  - name: output 4
+  - name: output 5
     debug:      
       msg: 
         -  "{{ ansible_user }}"
-        -  "{{ ansible_password }}"      
+        #-  "{{ ansible_password }}"      
     
