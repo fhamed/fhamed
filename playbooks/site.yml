@@ -22,4 +22,6 @@
       
   - name: output 4
     debug:      
-      msg: "'{{ lookup('env', 'USER1') }}'"
+      msg: 
+        - "'{{ lookup('env', 'ANSIBLE_NET_USERNAME') }}'"
+        - "'{{ lookup('env', 'ANSIBLE_NET_PASSWORD') }}'"
