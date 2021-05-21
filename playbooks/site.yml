@@ -19,3 +19,7 @@
   - name: output 3
     debug:
       var: USER1
+      
+  - name: output 4
+    debug:      
+      msg: "'{{ lookup('env', 'USER1') }}'"
