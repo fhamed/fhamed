@@ -15,3 +15,7 @@
   - name: output 2
     debug:
       var: WAWIADM_PW
+
+  - name: output 3
+    debug:
+      var: USER1
