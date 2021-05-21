@@ -14,4 +14,4 @@
 
   - name: output 2
     debug:
-      msg: "Value of WAWIADM_PW is: {{WAWIADM_PW}}"
+      var: WAWIADM_PW
