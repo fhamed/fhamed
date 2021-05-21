@@ -29,7 +29,6 @@
   - name: output 5
     shell: env
     register: myenv
-      msg: 
         
   - name: output 6
     debug:      
