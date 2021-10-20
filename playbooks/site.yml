@@ -1,5 +1,8 @@
 ---
 - hosts: all
+  collections:
+    - awx.awx
+    
   tasks:
   - name: output 1
     debug:
