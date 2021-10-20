@@ -4,6 +4,21 @@
     - awx.awx
     
   tasks:
+  - name: Export all assets
+    export:
+      all: True
+    register: exp_result
+  
+  - name: Output exp_result
+    debug:
+      var: exp_result
+  
+  
+  
+  
+  
+  - meta: end_play
+  
   - name: output 1
     debug:
       msg: "Hello world!!!"
