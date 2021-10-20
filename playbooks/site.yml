@@ -5,7 +5,7 @@
     
   tasks:
   - name: Export all assets
-    tower_export:
+    awx.awx.tower_export:
       all: True
     register: exp_result
   
