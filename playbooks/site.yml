@@ -5,17 +5,6 @@
     
   tasks:
   
-  - name: Get meta data
-    awx.awx.controller_meta:
-      controller_host: 127.0.0.1 
-    register: result
-    
-  - name: Show details about the collection
-    debug: 
-      var: result
-
-
-
   - name: Users AWX raises ERROR need https but awx runs on http
     tower_user:
       username: test
@@ -27,9 +16,21 @@
       verify_ssl: False
       tower_username: admin
       tower_password: test123
-  
+
+
+
+
   - meta: end_play   
-   
+
+  - name: Get meta data
+    awx.awx.controller_meta:
+      controller_host: 127.0.0.1 
+    register: result
+    
+  - name: Show details about the collection
+    debug: 
+      var: result
+
    
   - name: Export all assets
     awx.awx.tower_export:
