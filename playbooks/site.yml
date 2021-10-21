@@ -14,9 +14,9 @@
     debug: 
       var: result
 
-  - meta: end_play   
 
-  - name: Users AWX raises ERROR: need https but awx runs on http
+
+  - name: Users AWX raises ERROR need https but awx runs on http
     tower_user:
       username: test
       first_name: FirstName
@@ -28,7 +28,9 @@
       tower_username: admin
       tower_password: test123
   
- 
+   - meta: end_play   
+   
+   
   - name: Export all assets
     awx.awx.tower_export:
       all: True
