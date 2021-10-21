@@ -5,6 +5,20 @@
     
   tasks:
   
+  - name: Export all assets
+    tower_export:
+      all: True
+      validate_certs: no
+    register: exp_result
+  
+  - name: Output exp_result
+    debug:
+      var: exp_result 
+
+
+  - meta: end_play   
+
+
   - name: Users AWX raises ERROR need https but awx runs on http
     tower_user:
       username: test
@@ -18,18 +32,7 @@
       tower_password: test123
 
 
-
-
-  - meta: end_play   
-
-
-
-
-  
-  
-  
-  
-  
+ 
   
   
   - name: output 1
