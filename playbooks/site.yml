@@ -6,7 +6,7 @@
   tasks:
   
   - name: Export all assets
-    tower_export:
+    awx.awx.tower_export:
       all: True
       #validate_certs: no
     register: exp_result
