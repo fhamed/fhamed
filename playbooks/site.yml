@@ -11,7 +11,8 @@
     register: result
     
   - name: Show details about the collection
-    debug: var=result
+    debug: 
+      var: result
 
   - meta: end_play   
 
