@@ -8,7 +8,7 @@
   - name: Export all assets
     tower_export:
       all: True
-      validate_certs: no
+      #validate_certs: no
     register: exp_result
   
   - name: Output exp_result
