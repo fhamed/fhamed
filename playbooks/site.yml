@@ -22,14 +22,7 @@
 
   - meta: end_play   
 
-  - name: Get meta data
-    controller_meta:
-      controller_host: 127.0.0.1 
-    register: result
-    
-  - name: Show details about the collection
-    debug: 
-      var: result
+
 
    
   - name: Export all assets
