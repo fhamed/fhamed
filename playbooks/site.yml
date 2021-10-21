@@ -23,7 +23,7 @@
   - meta: end_play   
 
   - name: Get meta data
-    awx.awx.controller_meta:
+    controller_meta:
       controller_host: 127.0.0.1 
     register: result
     
