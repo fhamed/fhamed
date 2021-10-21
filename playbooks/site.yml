@@ -9,6 +9,10 @@
     awx.awx.tower_export:
       all: True
       #validate_certs: no
+    vars:  
+      #verify_ssl: False
+      tower_username: admin
+      tower_password: test123  
     register: exp_result
   
   - name: Output exp_result
