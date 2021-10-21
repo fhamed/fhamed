@@ -11,6 +11,10 @@
       last_name: LastName
       email: email@example.com
       password: changeme
+    vars:  
+      verify_ssl: False
+      tower_username: admin
+      tower_password: test123
   
   
   - meta: end_play
