@@ -28,7 +28,7 @@
       tower_username: admin
       tower_password: test123
   
-   - meta: end_play   
+  - meta: end_play   
    
    
   - name: Export all assets
