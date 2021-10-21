@@ -13,9 +13,7 @@
   - name: Show details about the collection
     debug: var=result
 
-  - meta: end_play
-  
-  
+ 
 
   - name: Users AWX
     tower_user:
@@ -29,7 +27,7 @@
       tower_username: admin
       tower_password: test123
   
-  
+  - meta: end_play  
   
   - name: Export all assets
     awx.awx.tower_export:
