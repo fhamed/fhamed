@@ -15,7 +15,7 @@
     vars:  
       verify_ssl: False
       tower_username: admin
-      tower_password: xxx
+      tower_password: test123
 
 
   - meta: end_play   
