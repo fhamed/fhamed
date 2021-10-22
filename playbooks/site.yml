@@ -12,7 +12,7 @@
     vars:  
       #verify_ssl: False
       tower_username: admin
-      tower_password: test123
+      tower_password: xxx
       ansible_python_interpreter: /usr/bin/python3
     register: exp_result
   
