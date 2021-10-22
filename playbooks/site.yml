@@ -1,5 +1,6 @@
 ---
 - hosts: all
+  ansible_connection: ansible-tower-cli
   collections:
     - awx.awx
     
