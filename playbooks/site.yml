@@ -1,7 +1,5 @@
 ---
 - hosts: all
-  vars:
-    ansible_connection: ansible-tower-cli
   collections:
     - awx.awx
     
@@ -24,7 +22,7 @@
   
   
   - name: Export all assets
-    awx.awx.tower_export:
+    tower_export:
       all: True
       #validate_certs: no
     vars:  
