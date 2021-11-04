@@ -5,20 +5,20 @@
     
   tasks:
   
-  - name: Users AWX raises ERROR need https but awx runs on http
-    tower_user:
-      username: test
-      first_name: FirstName
-      last_name: LastName
-      email: email@example.com
-      password: changeme
-    vars:  
-      verify_ssl: False
-      tower_username: admin
-      tower_password: xxx
+  #- name: Users AWX raises ERROR need https but awx runs on http
+  #  tower_user:
+  #    username: test
+  #    first_name: FirstName
+  #    last_name: LastName
+  #    email: email@example.com
+  #    password: changeme
+  #  vars:  
+  #    verify_ssl: False
+  #    tower_username: admin
+  #    tower_password: xxx
 
 
-  - meta: end_play   
+  #- meta: end_play   
   
   
   #- name: Export all assets
@@ -42,7 +42,7 @@
   
   - name: output 1
     debug:
-      msg: "Hello world!!!"
+      msg: "Hello world!"
 
   - name: Load variables from test.yml
     include_vars: ../test.yml
